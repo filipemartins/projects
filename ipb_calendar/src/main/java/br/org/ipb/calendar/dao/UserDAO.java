@@ -19,6 +19,14 @@ public class UserDAO {
 		em.persist(user);		
 	}
 	
+	public void update(User user) {
+		em.merge(user);
+	}
+	
+	public void delete(User user) {
+		em.remove(user);
+	}
+	
 	public List<User> listAll() {
 		Query query = em.createQuery("SELECT c FROM User c");
 		List<User> list = query.getResultList();

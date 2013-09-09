@@ -14,7 +14,7 @@ public class UserBO {
 	@EJB
 	private UserDAO userDAO;
 
-	public User getUser(long id) {
+	public User getUserById(long id) {
 		return userDAO.getUser(id);
 	}
 

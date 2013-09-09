@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 
 	<persistence-unit name="ipbCalendarPU" transaction-type="JTA">
-		<jta-data-source>java:/Plac_MySQLDS</jta-data-source>
+		<jta-data-source>java:/IPB_MySQLDS</jta-data-source>
 
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />

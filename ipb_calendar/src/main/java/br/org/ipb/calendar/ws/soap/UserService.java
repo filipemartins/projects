@@ -24,9 +24,4 @@ public class UserService {
 	public List<User> listAll() {
 		return userBO.listAll();
 	}
-
-	@WebMethod(exclude = true)
-	public List<User> listAll2() {
-		return userBO.listAll();
-	}
 }
