@@ -23,7 +23,7 @@ public class UserRestService {
 
 	@POST
 	@Path("/save")
-	@Consumes(MediaType.APPLICATION_JSON)
+	@Consumes( { "application/json", "application/xml" } )
 	public void save(User user) {
 		userBO.save(user);
 	}
