@@ -1,4 +1,4 @@
-package br.org.ipb.calendar.ws.rs;
+package br.org.ipb.calendar.ws.rest;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

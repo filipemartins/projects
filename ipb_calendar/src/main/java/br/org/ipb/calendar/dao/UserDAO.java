@@ -2,17 +2,19 @@ package br.org.ipb.calendar.dao;
 
 import java.util.List;
 
-import javax.ejb.Stateless;
+import javax.ejb.Stateful;
+import javax.enterprise.inject.Alternative;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import br.org.ipb.calendar.model.User;
 
-@Stateless
+@Stateful
+@Alternative
 public class UserDAO {
 	
-	@PersistenceContext
+	@Inject
 	private EntityManager em;
 	
 	public void save(User user) {
